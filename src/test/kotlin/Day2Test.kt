@@ -17,13 +17,14 @@ class Day2Test {
         assertEquals(2, Day2.firstTask(Day2.transform(sampleInput)))
     }
 
+    // actual is now 328? what changed?
     @Test
     fun testFirstTask() {
         val taskInput = File("$path/day2.txt").readText()
         val input = Day2.transform(taskInput)
         val result = Day2.firstTask(input)
         println(result)
-        assertEquals(306, Day2.firstTask(input))
+        assertEquals(306, result)
     }
 
     @Test
@@ -34,12 +35,13 @@ class Day2Test {
     // 388 too high
     // 343 too low - right answer for other account? :D
     // 363 too low?
+    // actual is now 528? what changed?
     @Test
     fun testSecondTask() {
         val taskInput = File("$path/day2.txt").readText()
         val input = Day2.transform(taskInput)
         val result = Day2.secondTask(input)
         println(result)
-        // assertEquals(306, Day2.firstTask(input))
+        assertEquals(366, result)
     }
 }

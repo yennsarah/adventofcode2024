@@ -1,3 +1,7 @@
+
+/**
+ * https://adventofcode.com/2024/day/3
+ */
 object Day3 {
     fun extractMulsFirst(input: String): List<Pair<Int, Int>> {
         val regex = "mul\\(\\d+,\\d+\\)".toRegex()

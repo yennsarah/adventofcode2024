@@ -1,5 +1,8 @@
 import kotlin.math.abs
 
+/**
+ * https://adventofcode.com/2024/day/2
+ */
 object Day2 {
 
     fun transform(input: String): List<List<Int>> {
@@ -9,15 +12,15 @@ object Day2 {
     }
 
     fun firstTask(input: List<List<Int>>): Int {
-        val safeReportsCount = input.map { report ->
+        val safeReportsCount = input.filter { report ->
             val allSafeSteps = allSafeSteps(report)
             val allIncrease = allIncrease(report)
             val allDecrease = allDecrease(report)
             val result = allSafeSteps && (allIncrease || allDecrease)
-            // println("allSafeSteps $allSafeSteps && allIncrease $allIncrease && allDecrease $allDecrease: $result")
+            // println("${report.joinToString(" ")}\nallSafeSteps $allSafeSteps && allIncrease $allIncrease && allDecrease $allDecrease: $result")
 
             result
-        }.count { it }
+        }.size
 
         return safeReportsCount
     }

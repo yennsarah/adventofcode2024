@@ -45,7 +45,7 @@ object Day1 {
 
         input.split("\n")
             .map { line ->
-                val (first, second) = line.split("   ").map { it.toInt() }
+                val (first, second) = line.split("   ").map { it.trim().toInt() }
                 Pair(first, second)
             }.forEach { (first, second) ->
                 list1.add(first)

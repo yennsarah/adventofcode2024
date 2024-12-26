@@ -1,3 +1,7 @@
+
+/**
+ * https://adventofcode.com/2024/day/6
+ */
 object Day6 {
     fun transform(sample: List<String>): List<List<Char>> {
         return sample.map { line ->
@@ -70,6 +74,7 @@ object Day6 {
     }
 
     fun secondTask(data: List<List<Char>>): List<Pair<Int, Int>> {
+        TODO()
         val positions: MutableList<Pair<Int, Int>> = mutableListOf()
         val pathData = data.map { it.toMutableList() }
 

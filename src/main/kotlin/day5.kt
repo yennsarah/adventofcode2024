@@ -1,3 +1,7 @@
+
+/**
+ * https://adventofcode.com/2024/day/5
+ */
 object Day5 {
     fun transform(sample: String): Pair<List<Pair<Int, Int>>, List<List<Int>>> {
         val (first, second) = sample.split("\n\n")

@@ -1,5 +1,8 @@
 typealias Matrix = List<List<Char>>
 
+/**
+ * https://adventofcode.com/2024/day/4
+ */
 object Day4 {
     val debug = false
     fun transform(sampleInput: String): Matrix {
