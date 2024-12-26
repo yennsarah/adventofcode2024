@@ -1,10 +1,10 @@
 /**
  * https://adventofcode.com/2024/day/8
  */
-data class Coordinate(val i: Int, val j: Int)
-data class Point(val char: Char, val coord: Coordinate)
-
 object Day8 {
+
+    data class Coordinate(val i: Int, val j: Int)
+    data class Point(val char: Char, val coord: Coordinate)
 
     fun transform(input: List<String>): List<List<Char>> {
         return input
